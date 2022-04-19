@@ -1,0 +1,49 @@
+package binarySearchTree;
+
+public class BST {
+	Node root;
+	
+	public BST()
+	{
+		this.root=null;
+	}
+	
+	public void insert(int value)
+	{
+		Node tmp=new Node(value);
+		if(root==null)
+		{
+			root=tmp;
+		}
+		else
+		{
+			Node itr=root;
+			if (value<itr.data)//smaller value to the left
+			{
+				if(itr.left==null)
+				{
+					itr.left=tmp;
+					break;
+				}
+				else
+					itr=itr.left;
+				
+			}			
+			else if(value>itr.data)//large value to the right
+			{
+				if(itr.right==null)
+				{
+					itr.right=tmp;
+					break;
+				}
+				else
+					itr=itr.right;
+			}
+			else
+				break;
+		}
+	}
+	
+	public void
+
+}

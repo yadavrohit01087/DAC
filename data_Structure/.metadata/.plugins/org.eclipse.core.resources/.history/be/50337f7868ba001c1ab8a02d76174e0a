@@ -1,0 +1,21 @@
+package hashingStudent;
+
+public class Main {
+
+	public static void main(String[] args) {
+		HashingStudent hash=new HashingStudent(10);
+		Student s1=new Student("Rohit",24,"9930397476","rohit.077yada@gmail.com");
+		Student s1=new Student("Rohit",24,"9930397476","rohit.077yada@gmail.com");
+		Student s1=new Student("Rohit",24,"9930397476","rohit.077yada@gmail.com");
+		
+		hash.insert(s1);
+		has
+		System.out.println(hash);
+		
+		hash.removeS("Rohit");
+//		hash.removeS("radha");
+		hash.removeS("Rohit");
+		System.out.println(hash);
+	}
+
+}

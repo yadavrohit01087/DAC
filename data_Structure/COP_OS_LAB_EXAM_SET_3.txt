@@ -1,0 +1,35 @@
+
+Note:
+Question 1 is compulsory, attempt any 2 questions from remaining 3
+ 
+1). Write a shell script that accepts a level number from user and prints as follows
+	For ex - if level is 4 print. (14 Marks)
+	1
+	2 2
+	3 3 3
+	4 4 4 4
+
+2). Write a C program to create a thread that prints hello world 100 times. 
+	The main thread should wait for the thread to finish and display goodbye. (13 Marks)
+	
+3). Write a Java program to insert an element in an array at a specified index 
+	by moving elements to the right. (13 Marks)
+
+4). Get below Main compile and run correctly by writing Player class (13 Marks)
+	public class Main {
+		public static void main(String [] args)
+		{
+			//Every player has name, highest_score and role attributes
+			Player dhoni = new Player("Dhoni", 224, "Witcket-Keeper");
+			Player virat = new Player("Virat", 236, "Batsman");
+			
+			//If below line un-commented, it should be compile time error 
+			//Player p3 = new Player();
+			
+			if ( dhoni.getHighestScore() > virat.getHighestScore() )
+				System.out.println(dhoni);
+			else
+				System.out.println(virat);
+		}		
+	}
+

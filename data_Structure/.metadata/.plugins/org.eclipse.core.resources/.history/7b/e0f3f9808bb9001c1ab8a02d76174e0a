@@ -1,0 +1,16 @@
+package bank;
+
+public class BankDetails {
+	/*
+	 * Q5.Write a Java Class BankDetails which contains(accno,name,acc_type,balance)
+For the aboove class do below options.
+1.Deposit_money()
+2.Withdraw_money()
+3.check_balance()
+4.display_all information about account
+Account no should be generated automatically should not be taken from user.
+
+	 */
+	
+
+}

@@ -1,0 +1,34 @@
+package closeHashingStudent;
+/*
+ * 
+ * Student.javaCreate Student object with below member variables and provide helping function into Students class
+- age
+- name
+- mobile_no
+- emailid
+
+Apply hashing on above Students object to place them in array size 10.
+Make use of student's mobile_no for calculating hashcode (key)
+Make use of linear probing for collisions
+Print number of times collision happened while placing 10 students in array. 
+
+
+ */
+
+public class Main {
+
+	public static void main(String[] args) {
+		CloseHashing hash=new CloseHashing(10);
+		Student s1=new Student();
+		Student s2=new Student();
+		Student s3=new Student();
+		Student s4=new Student();
+		
+		
+		hash.insert(s1);
+		hash.insert(s2);
+		hash.insert(s3);
+		hash.print();
+	}
+
+}

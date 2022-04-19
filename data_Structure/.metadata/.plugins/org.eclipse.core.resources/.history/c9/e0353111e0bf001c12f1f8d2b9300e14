@@ -1,0 +1,13 @@
+package search;
+
+public class Main {
+
+	public static void main(String[] args) {
+		Search s1=new Search(5);
+		s1.acceptArray();
+		s1.binarySearch(20);
+		s1.sequentialSearch(30);
+
+	}
+
+}

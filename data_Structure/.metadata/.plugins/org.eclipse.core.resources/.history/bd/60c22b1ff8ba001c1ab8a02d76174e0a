@@ -1,0 +1,22 @@
+package quickSorting;
+
+public class QuickSorting {
+	
+	public static void quickSort(int arr[],int l,int h)
+	{
+		if(l<h)
+		{
+			int pi=partition(arr,l,h);
+			  quickSort(arr,l,pi-1);
+			  quickSort(arr,pi+1,h);
+			  
+			
+			
+			
+		}
+		
+		
+		
+	}
+
+}

@@ -1,0 +1,70 @@
+Q1.Create a class MyPen which has 
+attributes(pencolour,brand,pentype(Example->ballPen,inkPen,gellPen),price)\
+1.Write parameter less and parameterized constructor
+2.getter and setter methods and toString() method.
+       Write another class called TestMain which has main() method which will create 
+3 objects of MyPen class.and which will update the pentype from ballpen to gellpen.
+(hint:call setter method to update the type of pen).Display all the objects.
+
+Q2.Create a class Employee(empid,empname,basicSalary)
+Write constructor,toString(),getter and setter method.
+and also add calculateSalary() which calculate salary with incentive
+if basicSalary is greater than 5000 the incentaive is 1000rs.
+otherwise incentaive is 500rs 
+
+Q3.Create class MyDate(day,month,year) which will have constructors and getter/setters 
+and toString().
+create another class called 
+Patient(String patient_name,String address,MyDate DOB,String MedicalHistory) .Write all constructors
+getter/setter,toString() for this class 
+Write another class Called TestPatient which will have main() method which will create 2 objects
+of patient class and call all the functionalities.
+
+Q4.Create a class in java MyCalculator with 
+two data members int num1,num2 .
+Write Parameter less and Parameterized Constructor 
+to initialize your data members.
+MyCalculator()
+{
+	//write your code here
+}
+MyCalculator(int n1,int n2)
+{
+	//write your code here
+}
+void display()
+{
+	Display num 1 and num2 value
+}
+
+Write below functions in MyCalculatorOpr class
+make all functions static
+void add(MyCalculator ob1,MyCalculator ob2)
+{
+	which will add two calculator objects
+} 
+void Subtraction(MyCalculator ob1,MyCalculator ob2)
+{
+
+}
+void multiply(MyCalculator ob1,MyCalculator ob2)
+{
+	
+}
+void divide(MyCalculator ob1,MyCalculator ob2)
+{
+
+}
+{In main function call all of them by creating MyCalculator object.
+Public static void main(String args[])
+
+	MyCalculator m=new MyCalculator();
+
+	//
+}
+
+
+
+
+
+

@@ -1,0 +1,14 @@
+Q1.Implementation menu driven linkedlist of integer 
+which follows the following functionality
+
+1.Insert first, append ,by position.
+2.Delete first ,last ,by position
+3.Print forward, reverse linkedlist
+4.Reverse linkedlist
+5.Print smallest and biggest number
+6.Print even number
+7.Print odd number
+8.Insert by value
+
+Q2 Implement student stack by using linkedlist
+Q3.Implement  Employee Queue using linkedlist

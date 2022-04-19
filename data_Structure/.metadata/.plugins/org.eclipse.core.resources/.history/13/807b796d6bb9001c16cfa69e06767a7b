@@ -1,0 +1,10 @@
+package mathUtil;
+
+public class Mathutil {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

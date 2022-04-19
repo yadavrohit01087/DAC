@@ -1,0 +1,49 @@
+package quickSorting;
+
+public class QuickSorting {
+	
+	public static int quickSort(int arr[],int l,int h)
+	{
+		if(l<h)
+		{
+			int pi=partition(arr,l,h);//
+			  quickSort(arr,l,pi-1);
+			  quickSort(arr,pi+1,h);
+		}
+		
+		
+		public static int partition(int arr [],int l,int h)
+		{
+			int p=h,j=l,i=l-1;
+			if(j!=p)
+			{
+				if(arr[j]<arr[p])
+				{
+					i++;
+					int temp=arr[j];
+					arr[j]=arr[i];
+					arr[i]=temp;
+					j++;
+					
+				}
+					j++;
+			}
+			else if(j==p)
+			{
+			   i++;
+			   int temp=arr[j];
+				arr[j]=arr[i];
+				arr[i]=temp;
+			}
+			return i;
+		}
+	}
+	
+	public static void print()
+	{
+		for(i=0;i<arr)
+		
+	}
+
+
+}

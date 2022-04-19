@@ -1,0 +1,128 @@
+package hashingStudent;
+
+public class Student {
+	private String name;
+	private String mobile;
+	private int age;
+	private String email;
+	
+	public Student()
+	{
+		this.mobile=null;
+		this.name=null;
+		this.age=0;
+		this.email=null;
+		
+	}
+	
+	public String getMobile() {
+		return mobile;
+	}
+
+	public void setMobile(String mobile) {
+		this.mobile = mobile;
+	}
+
+	public String getEmail() {
+		return email;
+	}
+
+	public void setEmail(String email) {
+		this.email = email;
+	}
+
+	public Student(String name,String mobile,int age,String email)
+	{
+		this.mobile=mobile;
+		this.name=name;
+		this.age=age;
+		this.email=email;
+		
+	}
+	
+	public void printAvgMarks()
+	{
+		float sum=0;
+		for(int i=0;i<marks.length;i++)
+		{
+			sum=sum+marks[i];
+		}
+		System.out.println("avg Marks :"+sum/marks.length);
+	}
+
+	public void printHighestMarks()
+	{
+		int h=marks[0];
+		for(int i=0;i<marks.length;i++)
+		{
+			if(marks[i]>h)
+			{
+				h=marks[i];
+			}
+		}
+		System.out.println(h);
+	}
+	
+	
+	public void printLowestMarks()
+	{
+		int l=marks[0];
+		for(int i=0;i<marks.length;i++)
+		{
+			if(marks[i]<l)
+			{
+				l=marks[i];
+			}
+		}
+		System.out.println(l);
+	}
+	
+	public static void maxAge(Student s[])
+	{
+		Student max=s[0];
+		for(int i=0;i<s.length;i++)
+		{
+			if(s[i].age>max.age)
+			{
+				max=s[i];
+			}
+		}
+		System.out.println(max);
+	}
+	
+	public int getEachAvg ()
+	{
+		int sum=0,avg;
+		for(int i=0;i<marks.length;i++)
+		{
+			sum=sum+this.marks[i];
+		}
+		avg=sum/marks.length;
+		return avg;
+	}
+	
+	public static void findAvg(Student s[]) 
+	{
+		int sum=0,avg;
+		//Student sum=new Student();
+		for(int i=0;i<s.length;i++)
+		{
+			sum=sum+s[0].getEachAvg();
+		}
+		avg=sum/s.length;
+		System.out.println("avg of all student marks: "+avg);
+	}
+	
+	public String toString()
+	{
+		String str="";
+		str="Student [ "+this.rollNo+","+this.name+','+this.age+" ] , Marks : (";
+
+		for(int i=0;i<marks.length;i++)
+		{
+				str+=marks[i]+", ";
+		}
+		str+=")";
+		return str;
+	}
+}

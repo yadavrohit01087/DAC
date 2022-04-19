@@ -1,0 +1,22 @@
+package hashingString;
+
+public class Main {
+
+	public static void main(String[] args) {
+		Hashing hash=new Hashing(50);
+		
+//		hash.insertL("Rohit");
+//		hash.insertQ("Rohit");
+//		hash.insertQ("Rohit");
+		hash.insertS("Rohit");
+		hash.insertS("Rohit");
+//		hash.insertL("Rohit");
+//		hash.insertL("Rohit");
+//		hash.insertL("Rohit");
+		
+//		hash.removeL("Rohit");
+//		hash.removeL("Rohit");
+//		hash.removeL("Rohit");
+	}
+
+}

@@ -1,0 +1,3 @@
+Q1 Hashing  using closed collision approach
+Q2 Quick sort for integer& Student (as per age/ marks)
+Q3 Merge of two sorted array into 3rd array.

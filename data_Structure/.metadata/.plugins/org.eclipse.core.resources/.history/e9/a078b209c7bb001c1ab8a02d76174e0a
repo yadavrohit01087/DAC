@@ -1,0 +1,24 @@
+package binarySearchTree;
+
+public class BST {
+	Node root;
+	
+	public BST()
+	{
+		this.root=null;
+	}
+	
+	public void insert(int data)
+	{
+		Node tmp=new Node(data);
+		if(root==null)
+		{
+			root=tmp;
+			
+		}
+		
+		
+		
+	}
+
+}

@@ -1,0 +1,10 @@
+package bank;
+
+public class Main {
+
+	public static void main(String[] args) {
+	Bankdetails b1=new Bankdetails(109200,"Rohit","saving",15000.0);
+
+	}
+
+}

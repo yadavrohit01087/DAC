@@ -1,0 +1,66 @@
+package bank;
+
+public class BankDetails {
+	/*
+	 * Q5.Write a Java Class BankDetails which contains(accno,name,acc_type,balance)
+For the aboove class do below options.
+1.Deposit_money()
+2.Withdraw_money()
+3.check_balance()
+4.display_all information about account
+Account no should be generated automatically should not be taken from user.
+
+	 */
+	private int accNo;
+	private String name;
+	private String accType;
+	private float balance;
+	
+	public BankDetails(int a,String n,String t,float b)
+	{
+		this.accNo=a;
+		this.name=n;
+		this.accType=t;
+		this.balance=b;
+		
+	}
+
+	public int getAccNo() {
+		return accNo;
+	}
+
+	public void setAccNo(int accNo) {
+		this.accNo = accNo;
+	}
+
+	public String getName() {
+		return name;
+	}
+
+	public void setName(String name) {
+		this.name = name;
+	}
+
+	public String getAccType() {
+		return accType;
+	}
+
+	public void setAccType(String accType) {
+		this.accType = accType;
+	}
+
+	public float getBalance() {
+		return balance;
+	}
+
+	public void setBalance(float balance) {
+		this.balance = balance;
+	}
+
+	@Override
+	public String toString() {
+		return "BankDetails [accNo=" + accNo + ", name=" + name + ", accType=" + accType + ", balance=" + balance + "]";
+	}
+	
+
+}

@@ -1,0 +1,34 @@
+
+Note:
+Question 1 is compulsory, attempt any 2 questions from remaining 3
+
+1). Write a Shell script which will do below operations:
+	- Accept filename string from the user
+	- If a file with same name is present in current directory then print "This is filename" and exit
+	- If a directory with same name is present in current directory then print "This is directory name" and exit
+	- If current directory does not have file/directory with input name then, create new file in with same name and write "Hello World" in it and exit.
+	(14 Marks)
+
+2). Write a C program that creates 3 child processes. 
+    Each child process must respectively execute, ls, date and cal linux commands (13 Marks)
+
+3). Write a Java function power that takes two numbers as arguments n, m and returns power of n to power of m.(13 Marks)
+
+4). Get below Main compile and run correctly by writing Player class (13 Marks)
+	public class Main {
+		public static void main(String [] args)
+		{
+			//Every player has name, total_wickets and role attributes
+			Player ashwin = new Player("Ashwin", 455, "Bowler");
+			Player shammi = new Player("Shammi", 344, "Bowler");
+			
+			//If below line un-commented, it should be compile time error 
+			//Player p3 = new Player();
+			
+			if ( ashwin.getTotalWickets() > shammi.getTotalWickets() )
+				System.out.println(ashwin);
+			else
+				System.out.println(virat);
+		}
+	}
+

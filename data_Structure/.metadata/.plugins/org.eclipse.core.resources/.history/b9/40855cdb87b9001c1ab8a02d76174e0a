@@ -1,0 +1,30 @@
+package employee;
+
+public class Main {
+	/*
+	 * Q3.Write a class Student having following attributes
+	int rollNo;
+	String studentName;
+	boolean isExperianced;
+they should be private
+write a no-args and parameterized constructor.getter and setter for all the attributes
+write two public methods
+1. showStudentInfo
+2. setExperienced(boolean b)
+create 3 different objects of Student class in main() and call all the functionalities.
+	 * 
+	 */
+
+	public static void main(String[] args) {
+		Employee e1=new Employee(1116,"Rohit",3500);
+		Employee e2=new Employee(1117,"Shrihari",5500);
+
+		float p1=e1.calculateSalary();
+		System.out.println(p1);
+		float p2=e2.calculateSalary();
+		System.out.println(p2);
+		System.out.println(e1);
+		System.out.println(e2);
+	}
+
+}

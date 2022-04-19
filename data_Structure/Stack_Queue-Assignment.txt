@@ -1,0 +1,32 @@
+Q1.Stack implementation
+	1. input size of stack from user.
+
+	2.Write menu driven operation
+  	 push(),pop(),equals()
+
+	3.implement two stack s1 and s2.
+
+	4.concat two stack
+	Stack s3=s1.concat(s2);
+	System.out.println(s3);
+
+	5.check Stack s1 and s2 are same or different
+ 
+Q2. Demonstrate a menu driven program of Stack for Student class
+
+
+Q3.Write a menu driven program to demonstrate various operation of queue
+	
+	
+	1. input size of Queue from user.
+
+	2.Write menu driven operation
+  		insert(),remove()
+
+	3.implement two Queue q1 and q2.
+
+	4.concat two Queue
+	Queue q3=q2.concat(q1);
+	System.out.println(q3);
+
+Q4.Demonstrate a menu driven program of Queue for Employee class

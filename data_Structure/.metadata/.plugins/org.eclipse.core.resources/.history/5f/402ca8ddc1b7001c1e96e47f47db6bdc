@@ -1,0 +1,27 @@
+package studentArr;
+
+public class Student {
+	private String name;
+	private int age;
+	private int [] marks;
+	
+	public Student(int age,String name)
+	{
+		this.name=name;
+		this.age=age;
+		this.marks=new int[5];
+		
+	}
+
+	public void setMarks(int []marks)
+	{
+		this.marks=marks;
+	}
+	
+	public String toString()
+	{
+		String str="";
+		 str="Student [ "+this.name+','+this.age+" ]";
+		str+=" "+marks[i];
+	}
+}

@@ -1,0 +1,30 @@
+package binary;
+
+public class BinarySearch {
+	int arr[];
+	
+	public BinarySearch(int size)
+	{
+		arr=new int[size];
+	}
+	
+	public void binarySearch(int key)
+	{
+		int low=0;
+		int high=arr.length;
+		int mid=(low+high)/2;
+		 while(arr[mid]!=key && low<high)
+		 {
+			 if(arr[mid]<key)
+			    high=mid-1;
+			 else
+				 low=mid+1;
+			 
+			 mid=(low+high)/2;
+		 }
+		
+		
+		
+	}
+
+}

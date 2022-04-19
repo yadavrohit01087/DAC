@@ -1,0 +1,122 @@
+package array;
+
+/*
+Q3.Write a class Student having following attributes
+	int rollNo;
+	String studentName;
+	boolean isExperianced;
+they should be private
+write a no-args and parameterized constructor.getter and setter for all the attributes
+write two public methods
+1. showStudentInfo
+2. setExperienced(boolean b)
+create 3 different objects of Student class in main() and call all the functionalities.
+
+Q4.Write a Java class Employee	id, name ,salary and DOJ as a field 
+from Date class that you have created earlier.Write no-args and parameterized constructor
+and showEmpDetails() function which displays all employee information.
+	Create another class EmpUser in that write main() method.
+create an employee array of size entered by user.
+in a loop accept the employee details for each employee and create an 
+Employee object add the object to the array.
+in another loop show details of all the employees entered in the array.
+
+Q5.Write a Java Class BankDetails which contains(accno,name,acc_type,balance)
+For the aboove class do below options.
+1.Deposit_money()
+2.Withdraw_money()
+3.check_balance()
+4.display_all information about account
+Account no should be generated automatically should not be taken from user.
+
+ * 
+ * 
+ * 
+ * 
+ */
+
+public class ArrMain {
+
+	public static void main(String[] args) {
+		double [] drr=new double [] {2.3,5.3,6.3};
+		boolean [] brr=new boolean[] { 2<3,5>6};
+		char [] crr=new char[] {'r','s','t'};
+		int [] arr=new int [5];
+		for(int i=0;i<5;i++)
+		{
+			arr[i]=5*i;
+		}
+		
+		int sum=sumArray(arr);
+		System.out.println("avg= "+sum/5);
+		printArray(arr);
+		printArray(brr);
+		printArray(crr);
+		printArray(drr);
+		printSumEven(arr);
+		
+	}
+
+public static int sumArray(int [] arr)
+{
+	int sum=0;
+	for(int i=0;i<5;i++)
+	{
+		sum=sum+arr[i];
+	}
+	return sum;
+}
+
+public static void printArray(int [] arr)
+{
+	
+	for(int i=0;i<arr.length;i++)
+	{
+		System.out.print(arr[i]+",");
+	}
+	System.out.println();
+}
+
+public static void printArray(boolean [] brr)
+{
+	
+	for(int i=0;i<brr.length;i++)
+	{
+		System.out.print(brr[i]+",");
+	}
+	System.out.println();
+}
+
+public static void printArray(char [] crr)
+{
+	
+	for(int i=0;i<crr.length;i++)
+	{
+		System.out.print(crr[i]+",");
+	}
+	System.out.println();
+}
+
+public static void printArray(double [] drr)
+{
+	
+	for(int i=0;i<drr.length;i++)
+	{
+		System.out.print(drr[i]+",");
+	}
+	System.out.println();
+}
+public static void printSumEven(int [] arr)
+{
+	int sum=0;
+	
+	for(int i=0;i<5;i++)
+	{
+		if(arr[i]%2==0)
+		{
+			sum=sum+arr[i];
+		}
+	}
+	System.out.println(sum);
+}
+}

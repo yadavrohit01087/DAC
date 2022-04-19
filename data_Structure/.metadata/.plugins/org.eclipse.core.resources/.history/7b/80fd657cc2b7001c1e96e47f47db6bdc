@@ -1,0 +1,15 @@
+package studentArr;
+
+public class StudentMain {
+
+	public static void main(String[] args) {
+		Student s1=new Student("Rohit",24);
+		int [] arr=new int [5];
+		arr[0]=47;
+		arr[1]=27;
+		arr[2]=57;
+		arr[3]=77;
+		arr[4]=97;
+	}
+
+}

@@ -1,0 +1,34 @@
+
+Note:
+Question 1 is compulsory, attempt any 2 questions from remaining 3
+
+1). Write a shell script to accept a number and range from user. 
+	Show the maths table of that number upto the range and summation of those numbers. (14 Marks)
+	E.g:
+     - User Input  :  2, 5  
+	 - Shell output:  2, 4, 6, 8, 10.
+	 - Summation output: 20. 
+ 
+2). Write a C program that creates two threads that share a global variable num. 
+	Main thread accepts number from user, first thread shows square of num and second thread shows cube of num. (13 Marks)
+
+3). Write a Java program to find out the difference of the largest and smallest elements of an array (13 Marks)
+
+4). Get below Main compile and run correctly by writing Player class (13 Marks)
+
+	public class Main {
+		public static void main(String [] args)
+		{
+			//Every player has name, matches_played and total_runs attributes
+			Player dhoni = new Player("Dhoni", 350, 10773);
+			Player virat = new Player("Virat", 183, 8389);
+			
+			//If below line un-commented, it should be compile time error 
+			//Player p3 = new Player();
+			
+			if ( dhoni.getAverageRuns() > virat.getAverageRuns() )
+				System.out.println(dhoni);
+			else
+				System.out.println(virat);
+		}		
+	}

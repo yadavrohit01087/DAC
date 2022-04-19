@@ -1,0 +1,102 @@
+package hashingStudent;
+
+public class HashingStudent {
+	Student arr[];
+	
+	public HashingStudent(int size)
+	{
+		arr=new Student[size];
+	}
+	
+//	public int hashFunction(String inputStr)
+//	{
+//		int sum=0;
+//		for(int i=1;i<inputStr.length();i++)
+//		{
+//			sum=sum+inputStr.charAt(i);
+//		}
+//		int index=sum%arr.length;
+//		return index;
+//	}
+	
+	public int hashfunction(String inputstr)
+	{
+		
+		
+		
+		
+		
+	}
+	public void insert(Student st)
+	{
+		String inputStr=st.getMobile();
+//		String inputStr=st.getEmail();
+		int index=hashFunction(inputStr);
+		System.out.print(inputStr+" is placed at "+index);
+		
+		if(arr[index]==null)
+		{
+			arr[index]=st;
+		}
+		
+		else
+			while(true)
+			{
+				if(index<arr.length-1)
+					index++;
+				else
+					index=0;
+
+				if(arr[index]==null)
+				{
+					arr[index]=st;
+					break;
+				}
+			}
+		System.out.println(" and placed at "+index);
+		System.out.println("***************");
+	}
+	
+	public void remove(Student st)
+	{
+		String inputStr=st.getEmail();
+		int index=search(inputStr);
+		arr[index]=null;
+		System.out.println(" and removed from"+index);
+		System.out.println("***************");
+	}
+	
+	public int search(String inputStr)
+	{
+		int index=hashFunction(inputStr);
+		System.out.print(inputStr+" is placed at "+index);
+		if(arr[index]!=null && inputStr.equals(arr[index].getEmail()))
+		{
+			return index;
+		}
+		else
+			while(true)
+			{
+				if(index<arr.length-1)
+				   index++;
+				else
+					index=0;
+				
+				if(arr[index]!=null && inputStr.equals(arr[index].getEmail()))
+				{
+					return index;
+				}
+			}
+	}
+
+	public String toString()
+	{
+		String str="";
+		for(int i=0;i<arr.length;i++)
+		{
+			str+=arr[i]+",";
+		}
+		System.out.println("***************");
+		return str;
+	}
+}
